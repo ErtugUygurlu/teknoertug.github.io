@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">teknOErtuğ</div>
+        <div class="nav-links">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="haberler.html">Haberler</a>
+            <a href="enCokOkunanlar.html">En Çok Okunanlar</a>
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="iletisim.html">İletişim</a>
+            <div class="dropdown">
+                <a href="#">Eğlence</a>
+                <div class="dropdown-content">
+                    <a href="oyun.html">Oyun</a>
+                    <a href="dizi.html">Dizi</a>
+                    <a href="film.html">Film</a>
+                </div>
+            </div>
+        </div>
+        <div class="burger-menu">&#9776;</div>
+    </div>
+
+    <div class="slogan">
+        <p>DİZİLER</p>
+    </div>
+
+    <div class="card-section">
+        <div class="card" onclick="goToNewsPage('breakingBad.html')">
+            <img src="dizi/breaking-bad.webp" alt="Resim 1">
+            <h2>Kimyasal Dönüşümün Dramı: Breaking Bad İncelemesi</h2>
+            <p>"Breaking Bad", Vince Gilligan tarafından yaratılan ve 2008 ile 2013 yılları arasında beş sezon boyunca
+                AMC kanalında yayınlanan, bir kimya öğretmeninin uyuşturucu üreticisine dönüşümünü konu alan kült bir
+                televizyon dizisidir. Dizi, kırılma noktası niteliğindeki bir kararla, kendi işine son verip uyuşturucu
+                üretimine başlayan ve zamanla karanlık bir dünyaya sürüklenen Walter White'ın hikayesini anlatır.</p>
+        </div>
+        <div class="card" onclick="goToNewsPage('gameOfThrones.html')">
+            <img src="dizi/gameOfThrones.webp" alt="Resim 2">
+            <h2>Tahtların Oyunu: Game of Thrones İncelemesi</h2>
+            <p>"Game of Thrones", George R.R. Martin'in "A Song of Ice and Fire" serisinden uyarlanmış ve HBO kanalında
+                2011 ile 2019 yılları arasında sekiz sezon boyunca yayınlanmış bir televizyon dizisidir. Dizi, Westeros
+                adlı kurgusal bir kıtada geçen entrikalar, savaşlar, siyasi mücadeleler ve fantastik unsurları içeren
+                bir hikayeyi anlatır. İşte Game of Thrones'un derinlemesine bir incelemesi:</p>
+        </div>
+        <div class="card" onclick="goToNewsPage('lucifer.html')">
+            <img src="dizi/lucifer.jpeg" alt="Resim 3">
+            <h2>Şeytanın İnsanlık Serüveni: Lucifer Dizisi İncelemesi</h2>
+            <p>"Lucifer", Neil Gaiman'ın yarattığı çizgi roman karakterlerinden biri olan Lucifer Morningstar'ın özgün
+                hikayesine dayanan bir televizyon dizisidir. Dizi, Lucifer'ın Cehennem'den kaçıp Los Angeles'a gelerek
+                cinayetleri çözmeye başlamasını ve bu süreçte yaşadığı maceraları konu alır. İşte "Lucifer" dizisinin
+                derinlemesine bir incelemesi: </p>
+        </div>
+        <div class="card" onclick="goToNewsPage('prisonBreak.html')">
+            <img src="dizi/prisonBreak.png" alt="Resim 4">
+            <h2>Özgürlük İçin Bir Hapishane Kaçışı: Prison Break İncelemesi</h2>
+            <p>"Prison Break", 2005-2009 yılları arasında Fox kanalında yayınlanan, Paul Scheuring tarafından yaratılan
+                ve izleyicileri heyecan dolu bir kaçış macerasına sürükleyen bir televizyon dizisidir. Başrollerinde
+                Wentworth Miller ve Dominic Purcell'in yer aldığı dizi, Lincoln Burrows'un yanlış yere hapsedilmesi
+                sonucu kardeşi Michael Scofield'ın onu kurtarmak için planladığı sofistike bir hapishane kaçışını konu
+                alır. İşte "Prison Break" dizisinin derinlemesine bir incelemesi: </p>
+        </div>
+    </div>
+    <br>
+
+
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="container2">
+        <div class="footer-info">
+            <h2>Adres:</h2>
+            <p>Tekno Ticaret Merkezi – 5. Kat<br>Yakut Mah. Atatürk Cd. No:14<br>12345 – Etimesgut/Ankara</p>
+            <p>Email: info@teknoertug.com</p>
+            <p>Telefon: (0312) 123 45 67</p>
+        </div>
+        <div class="footer-categories">
+            <h2>Kategoriler</h2>
+            <ul>
+                <li><a href="haberler.html">Teknoloji Haberleri</a></li>
+                <li><a href="enCokOkunanlar.html">En Çok Okunanlar</a></li>
+                <li><a href="film.html">Filmler</a></li>
+                <li><a href="dizi.html">Diziler</a></li>
+                <li><a href="oyun.html">Oyunlar</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h2>teknOErtuğ</h2>
+            <ul>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="aydinlatmaMetni.html">Aydınlatma Metni ve Çerez Politikası</a></li>
+                <li><a href="alintiHakkinda.html">Alıntı ve Yeniden Kullanım Hakkında</a></li>
+                <li><a href="kunye.html">Künye</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</html>

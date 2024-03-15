@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">teknOErtuğ</div>
+        <div class="nav-links">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="haberler.html">Haberler</a>
+            <a href="enCokOkunanlar.html">En Çok Okunanlar</a>
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="iletisim.html">İletişim</a>
+            <div class="dropdown">
+                <a href="#">Eğlence</a>
+                <div class="dropdown-content">
+                    <a href="oyun.html">Oyun</a>
+                    <a href="dizi.html">Dizi</a>
+                    <a href="film.html">Film</a>
+                </div>
+            </div>
+        </div>
+        <div class="burger-menu">&#9776;</div>
+    </div>
+
+    <div class="slogan">
+        <p>Teknolojinin kalbi burada atıyor!</p>
+    </div>
+
+    <div class="card-section">
+        <div class="card" onclick="goToNewsPage('robotik.html')">
+            <img src="teknoloji/Robotik ve Otomasyon.jpg" alt="Resim 1">
+            <h2>Robotik ve Otomasyon</h2>
+            <p>Robotik ve otomasyon, günümüzde endüstriyel işlemleri ve hizmet sektörünü dönüştüren temel
+                teknolojilerdir.
+                Endüstriyel otomasyon, fabrika ortamlarında kullanılan robotlar aracılığıyla üretim süreçlerini
+                otomatikleştirerek verimliliği artırır ve işçilerin ağır veya tehlikeli görevlerden kaçınmasına olanak
+                tanır.</p>
+        </div>
+        <div class="card" onclick="goToNewsPage('yapayEt.html')">
+            <img src="teknoloji/Yapay Et ve Sürdürülebilir Beslenme.webp" alt="Resim 2">
+            <h2>Yapay Et ve Sürdürülebilir Beslenme</h2>
+            <p>Yapay et, geleneksel hayvansal etin tüketime olan etkisi ve sağlık üzerindeki etkileriyle ilgili çeşitli
+                avantajlar sunmaktadır. Öncelikle, sürdürülebilir beslenme açısından, yapay et üretimi daha az doğal
+                kaynak kullanımı gerektirir ve daha az sera gazı emisyonuna yol açar. Bu, çevresel etkileri azaltarak
+                iklim değişikliğiyle mücadelede önemli bir adımdır. Ayrıca, yapay etin üretimi geleneksel hayvansal ete
+                kıyasla daha kontrollü ve hijyeniktir, bu da gıda güvenliği ve kalitesini artırır.</p>
+        </div>
+        <div class="card" onclick="goToNewsPage('Uzay.html')">
+            <img src="teknoloji/Uzay Turizmi ve Kolonizasyon.jpg" alt="Resim 3">
+            <h2>Uzay Turizmi ve Kolonizasyon</h2>
+            <p>Uzay turizmi ve kolonizasyon, insanlığın uzaya olan ilgisinin giderek artmasıyla birlikte önemli bir konu
+                haline gelmiştir. Uzay turizmi, insanların uzay yolculuklarına katılabilmelerini sağlayan bir endüstri
+                olarak tanımlanırken, uzay kolonizasyonu ise insanların uzayda yaşam kurmalarını ve uzaydaki
+                yerleşimleri hedefler. </p>
+        </div>
+        <div class="card" onclick="goToNewsPage('Sentetik.html')">
+            <img src="teknoloji/Sentetik Biyoloji ve Biyomalzemeler.jpg" alt="Resim 4">
+            <h2>Sentetik Biyoloji ve Biyomalzemeler</h2>
+            <p>Sentetik biyoloji ve biyomalzemeler, biyolojik sistemlerin tasarımı ve manipülasyonuyla ilgilenen bir
+                alanı ifade eder. Bu alan, genellikle gen mühendisliği, sentetik biyoloji ve biyomalzeme bilimi gibi
+                disiplinlerin birleşiminden oluşur. Sentetik biyoloji, biyolojik sistemleri analiz etmek, anlamak ve
+                mühendislik uygulamaları için tasarlamakla ilgilenirken, biyomalzemeler ise biyolojik kökenli veya
+                biyolojik olarak uyumlu malzemelerin tasarımı ve senteziyle ilgilenir. </p>
+        </div>
+    </div>
+    <br>
+    <div class="card-section">
+        <div class="card" onclick="goToNewsPage('genetikmuhendislik.html')">
+            <img src="teknoloji/Hesaplamalı Biyoloji ve Genetik Mühendislik.webp" alt="Resim 1">
+            <h2>Hesaplamalı Biyoloji ve Genetik Mühendislik</h2>
+            <p>Hesaplamalı biyoloji ve genetik mühendislik, biyolojik sistemlerin analizinde ve manipülasyonunda
+                bilgisayar modellemesi ve hesaplama yöntemlerinin kullanılmasını içeren disiplinlerdir. Bu alanlar,
+                genetik verilerin analiz edilmesi, biyolojik sistemlerin modellenmesi, genetik mühendislik
+                tasarımlarının oluşturulması ve biyolojik süreçlerin anlaşılması gibi birçok uygulamayı kapsar.
+            </p>
+        </div>
+        <div class="card" onclick="goToNewsPage('havacilik.html')">
+            <img src="teknoloji/Havacılık ve Elektrikli Uçaklar.jpg" alt="Resim 2">
+            <h2>Havacılık ve Elektrikli Uçaklar</h2>
+            <p>Havacılık endüstrisi, elektrikli uçaklar gibi yenilikçi teknolojilerle sürekli olarak evrim geçiriyor.
+                Elektrikli uçaklar, geleneksel içten yanmalı motorlara kıyasla daha çevre dostu ve sürdürülebilir bir
+                alternatif sunuyor. Bu teknoloji, uçuşlarda sera gazı emisyonlarını azaltırken, havacılık endüstrisinin
+                karbon ayak izini küçültmeye yardımcı olabilir.</p>
+        </div>
+        <div class="card" onclick="goToNewsPage('yapayzeka.html')">
+            <img src="teknoloji/Yapay Zeka ve İnsan Etkileşimi.webp" alt="Resim 3">
+            <h2>Yapay Zeka ve İnsan Etkileşimi</h2>
+            <p>Yapay zeka (YZ) ve insan etkileşimi, günümüz teknolojisinin en önemli ve dinamik alanlarından biridir.
+                YZ, insanlarla etkileşimde bulunmak için tasarlanmış bir dizi teknoloji ve uygulama içerir ve bu
+                etkileşim birçok şekilde gerçekleşebilir. </p>
+        </div>
+        <div class="card" onclick="goToNewsPage('tesla.html')">
+            <img src="teknoloji/tesla.webp" alt="Resim 4">
+            <h2>Tesla: Elektrikli Araçlarının Geleceği Şimdi!</h2>
+            <p>Tesla, otomotiv endüstrisine getirdiği çığır açan elektrikli araçlarla tanınan bir marka olarak,
+                sürdürülebilir ve yenilikçi bir geleceği şekillendiriyor. Tesla'nın elektrikli araçları, gelişmiş
+                batarya teknolojileri ve otomatik sürüş yetenekleri ile öne çıkıyor. Model S, Model 3, Model X ve Model
+                Y gibi modeller, yüksek performans, uzun menzil ve şık tasarımlarıyla dikkat çekiyor. </p>
+        </div>
+    </div>
+    <br>
+    <div class="card-section">
+        <div class="card" onclick="goToNewsPage('Quantum.html')">
+            <img src="teknoloji/Quantum Computing ve Veri Analitiği.jpeg" alt="Resim 1">
+            <h2>Quantum Computing ve Veri Analitiği</h2>
+            <p>Quantum computing, geleneksel bilgisayarların üzerinde çalıştığı temel prensiplerden farklı bir yaklaşım
+                benimseyen bir bilgi işlem modelidir. Klasik bilgisayarlar, bit adı verilen sıfır ve bir durumlarını
+                kullanarak bilgiyi işlerken, kuantum bilgisayarları, kubit adı verilen süperpozisyon durumundaki
+                parçacıkları kullanarak bilgiyi işler. Bu, kuantum bilgisayarlarının aynı anda birçok farklı hesaplama
+                yapabilme yeteneğine sahip olduğu anlamına gelir, bu da klasik bilgisayarlara kıyasla çok daha hızlı ve
+                karmaşık problemleri çözebilme potansiyeline sahip olduğu anlamına gelir.</p>
+        </div>
+        <div class="card" onclick="goToNewsPage('msi.html')">
+            <img src="teknoloji/msı.jpg" alt="Resim 2">
+            <h2>MSI Laptop: Güçlü Performans ve İleri Teknoloji</h2>
+            <p>MSI, bilgisayar endüstrisindeki güçlü konumuyla tanınan bir marka olarak, kullanıcılara üstün performans
+                ve ileri teknoloji sunan laptoplarıyla dikkat çekiyor. MSI laptopları, oyun tutkunlarından
+                profesyonellere kadar geniş bir kullanıcı kitlesine hitap eden güçlü işlemciler, yüksek performanslı
+                grafik kartları ve yenilikçi özelliklerle donatılmıştır.</p>
+        </div>
+        <div class="card" onclick="goToNewsPage('ps5.html')">
+            <img src="teknoloji/ps5.jpg" alt="Resim 3">
+            <h2>PS5: Yeni Nesil Oyun Deneyimi</h2>
+            <p>Sony'nin son oyun konsolu olan PlayStation 5 (PS5), oyun dünyasına getirdiği yüksek performans ve
+                yenilikçi özellikleriyle dikkat çekiyor. PS5, özel olarak tasarlanmış yüksek hızlı SSD'si sayesinde oyun
+                yükleme sürelerini minimize ederek kullanıcılara anında ve sorunsuz bir oyun deneyimi sunuyor. Grafik
+                açısından etkileyici olan yüksek çözünürlüklü oyunlar, hızlı işlemcisi ve ray tracing teknolojisi ile
+                gerçekçi görsel efektleri bir araya getiriyor. </p>
+        </div>
+        <div class="card" onclick="goToNewsPage('yenilenebilirEnerji.html')">
+            <img src="teknoloji/Yenilenebilir Enerji Depolama.jpg" alt="Resim 4">
+            <h2>Yenilenebilir Enerji Depolama</h2>
+            <p>Yenilenebilir enerji kaynakları, güneş ve rüzgar gibi doğal kaynaklardan elde edilen enerjiyi kullanarak
+                elektrik üretiminde giderek daha fazla kullanılmaktadır. Ancak, yenilenebilir enerji kaynaklarının
+                değişken doğası nedeniyle (örneğin, güneş enerjisi güneş ışığının mevcudiyetine, rüzgar enerjisi ise
+                rüzgarın hızına bağlıdır), bu kaynaklardan elde edilen enerjiyi etkin bir şekilde kullanmak için enerji
+                depolama sistemlerine ihtiyaç vardır. </p>
+        </div>
+    </div>
+
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="container2">
+        <div class="footer-info">
+            <h2>Adres:</h2>
+            <p>Tekno Ticaret Merkezi – 5. Kat<br>Yakut Mah. Atatürk Cd. No:14<br>12345 – Etimesgut/Ankara</p>
+            <p>Email: info@teknoertug.com</p>
+            <p>Telefon: (0312) 123 45 67</p>
+        </div>
+        <div class="footer-categories">
+            <h2>Kategoriler</h2>
+            <ul>
+                <li><a href="haberler.html">Teknoloji Haberleri</a></li>
+                <li><a href="enCokOkunanlar.html">En Çok Okunanlar</a></li>
+                <li><a href="film.html">Filmler</a></li>
+                <li><a href="dizi.html">Diziler</a></li>
+                <li><a href="oyun.html">Oyunlar</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h2>teknOErtuğ</h2>
+            <ul>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="aydinlatmaMetni.html">Aydınlatma Metni ve Çerez Politikası</a></li>
+                <li><a href="alintiHakkinda.html">Alıntı ve Yeniden Kullanım Hakkında</a></li>
+                <li><a href="kunye.html">Künye</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">teknOErtuğ</div>
+        <div class="nav-links">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="haberler.html">Haberler</a>
+            <a href="enCokOkunanlar.html">En Çok Okunanlar</a>
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="iletisim.html">İletişim</a>
+            <div class="dropdown">
+                <a href="#">Eğlence</a>
+                <div class="dropdown-content">
+                    <a href="oyun.html">Oyun</a>
+                    <a href="dizi.html">Dizi</a>
+                    <a href="film.html">Film</a>
+                </div>
+            </div>
+        </div>
+        <div class="burger-menu">&#9776;</div>
+    </div>
+
+    <div class="slogan">
+        <p>Haberler</p>
+    </div>
+
+    <div class="news-container" id="news-container">
+
+        <div class="card2" onclick="goToNewsPage('havacilik.html')">
+            <img src="teknoloji/Havacılık ve Elektrikli Uçaklar.jpg" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Havacılık ve Elektrikli Uçaklar</h2>
+                <p>Elektrikli uçaklar, havacılık endüstrisinde karbon ayak izini azaltarak çevre dostu bir ulaşım çözümü
+                    sunuyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('Biyonik.html')">
+            <img src="teknoloji/Biyonik Protezler ve Engellilerin İyileştirilmesi.jpg" alt="Haber Resmi 1"
+                class="card-image">
+            <div class="news-details">
+                <h2>Biyonik Protezler ve Engellilerin İyileştirilmesi</h2>
+                <p>Biyonik protezler, engellilerin yaşam kalitesini artırarak insan vücudunu teknolojiyle
+                    bütünleştiriyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('yapayEt.html')">
+            <img src="teknoloji/Yapay Et ve Sürdürülebilir Beslenme.webp" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Yapay Et ve Sürdürülebilir Beslenme</h2>
+                <p>Yapay et, hayvansal ürün tüketimini azaltarak sürdürülebilir bir beslenme kaynağı olarak önem
+                    kazanıyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('HidrojenYakit.html')">
+            <img src="teknoloji/Hidrojen Yakıt Hücresi Teknolojisi.jpg" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Hidrojen Yakıt Hücresi Teknolojisi</h2>
+                <p>Hidrojen yakıt hücresi teknolojisi, temiz enerji üretimi ve depolama konusunda önemli bir potansiyele
+                    sahip olarak fosil yakıtlara alternatif oluşturuyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('Uzay.html')">
+            <img src="teknoloji/Uzay Turizmi ve Kolonizasyon.jpg" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Uzay Turizmi ve Kolonizasyon</h2>
+                <p>Uzay turizmi, insanların uzayı keşfetmesine ve uzayda yaşam kurmasına olanak tanıyarak yeni bir
+                    endüstri yaratıyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('sentetik.html')">
+            <img src="teknoloji/Sentetik Biyoloji ve Biyomalzemeler.jpg" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Sentetik Biyoloji ve Biyomalzemeler</h2>
+                <p>Sentetik biyoloji, biyomalzemelerin tasarımı ve üretimi konusunda yeni fırsatlar sunarak malzeme
+                    biliminde çığır açıyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('elektrikliArac.html')">
+            <img src="teknoloji/Elektrikli ve Otonom Araçlar.jpg" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Elektrikli ve Otonom Araçlar</h2>
+                <p>Elektrikli ve otonom araçlar, ulaşım sektöründe çevre dostu ve güvenli bir alternatif sunarak
+                    geleceğin taşımacılığını şekillendiriyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('3D.html')">
+            <img src="teknoloji/3D Yazıcılar ve Üretim.jpg" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>3D Yazıcılar ve Üretim</h2>
+                <p>3D yazıcılar, üretim süreçlerini daha esnek, verimli ve ekonomik hale getirerek ürün tasarımını ve
+                    prototipleme sürecini yeniden tanımlıyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('biyometrik.html')">
+            <img src="teknoloji/Biyometrik Güvenlik ve Kimlik Doğrulama.jpg" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Biyometrik Güvenlik ve Kimlik Doğrulama</h2>
+                <p>iyometrik güvenlik, kimlik doğrulama süreçlerini daha güvenilir ve kullanıcı dostu hale getirerek
+                    dijital güvenliği artırıyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('akilliTarim.html')">
+            <img src="teknoloji/Tarımsal İnovasyon ve Akıllı Tarım.webp" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Tarımsal İnovasyon ve Akıllı Tarım</h2>
+                <p>Tarımsal inovasyon, akıllı tarım teknolojileri aracılığıyla verimliliği artırarak gıda güvenliğini ve
+                    sürdürülebilirliği destekliyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('yapayzeka.html')">
+            <img src="teknoloji/Yapay Zeka ve İnsan Etkileşimi.webp" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Yapay Zeka ve İnsan Etkileşimi</h2>
+                <p>Yapay zeka, insanlarla daha etkili ve doğal bir şekilde etkileşim kurmak için geliştirilen
+                    teknolojilerle birleşerek yeni bir boyut kazanıyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('Blockchain.html')">
+            <img src="teknoloji/Blockchain.jpg" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Blockchain ve Finansal İnovasyon</h2>
+                <p>Blockchain teknolojisi, finansal işlemlerde güvenilirlik ve şeffaflık sağlayarak finansal inovasyonu
+                    destekliyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('akilliEv.html')">
+            <img src="teknoloji/Nesnelerin İnterneti ve Akıllı Ev Teknolojileri.jpg" alt="Haber Resmi 1"
+                class="card-image">
+            <div class="news-details">
+                <h2>Nesnelerin İnterneti ve Akıllı Ev Teknolojileri</h2>
+                <p>Nesnelerin İnterneti, evlerimizi daha güvenli, verimli ve konforlu hale getirmek için sensörler ve
+                    bağlantılı cihazlar kullanarak akıllı ev teknolojilerini geliştiriyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('5G.html')">
+            <img src="teknoloji/5G ve Hızlı İletişim.webp" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>5G ve Hızlı İletişim</h2>
+                <p>5G teknolojisi, yüksek hızlı veri iletimiyle birlikte düşük gecikme süreleri sağlayarak iletişim
+                    alanında devrim yaratıyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('sanalGerceklik.html')">
+            <img src="teknoloji/Sanal Gerçeklik ve Eğitim.jpg" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Sanal Gerçeklik ve Eğitim</h2>
+                <p>Sanal gerçeklik, eğitim alanında daha etkili ve etkileşimli öğrenme deneyimleri sunarak öğrenme
+                    paradigmasını değiştiriyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('arttirilmisGerceklik.html')">
+            <img src="teknoloji/Artırılmış Gerçeklik ve Perakende.jpg" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Artırılmış Gerçeklik ve Perakende</h2>
+                <p>Artırılmış gerçeklik, perakende sektöründe müşteri deneyimini artırarak alışverişin dijitalleşmesine
+                    öncülük ediyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('Biyoteknoloji.html')">
+            <img src="teknoloji/Biyoteknoloji ve Sağlık İyileştirmeleri.jpg" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Biyoteknoloji ve Sağlık İyileştirmeleri</h2>
+                <p>Biyoteknoloji, sağlık sektöründe hastalıkların tedavisi ve insan performansının artırılması için
+                    yenilikçi çözümler sunuyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('genetikmuhendislik.html')">
+            <img src="teknoloji/Hesaplamalı Biyoloji ve Genetik Mühendislik.webp" alt="Haber Resmi 1"
+                class="card-image">
+            <div class="news-details">
+                <h2>Hesaplamalı Biyoloji ve Genetik Mühendislik</h2>
+                <p>Hesaplamalı biyoloji, genetik mühendislikteki ilerlemelerle birleşerek hastalıkların tanı ve
+                    tedavisinde yeni yöntemlerin geliştirilmesine olanak sağlıyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('Quantum.html')">
+            <img src="teknoloji/Quantum Computing ve Veri Analitiği.jpeg" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Quantum Computing ve Veri Analitiği</h2>
+                <p>Quantum computing, karmaşık veri analitiği problemlerini çözmek için yeni bir yaklaşım sunarak bilgi
+                    işlem alanında devrim yaratıyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('gunesEnerjisi.html')">
+            <img src="teknoloji/Güneş Enerjisi ve Sürdürülebilirlik.webp" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Güneş Enerjisi ve Sürdürülebilirlik</h2>
+                <p>Güneş enerjisi, temiz ve yenilenebilir bir enerji kaynağı olarak sürdürülebilirlik çabalarını
+                    destekleyerek enerji sektöründe dönüşümü tetikliyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('yenilenebilirEnerji.html')">
+            <img src="teknoloji/Yenilenebilir Enerji Depolama.jpg" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Yenilenebilir Enerji Depolama</h2>
+                <p>Yenilenebilir enerji depolama teknolojileri, enerjiyi depolayarak talep ve arz dengesini sağlayarak
+                    enerji sistemlerini daha verimli hale getiriyor.</p>
+            </div>
+        </div>
+        <div class="card2" onclick="goToNewsPage('Robotik.html')">
+            <img src="teknoloji/Robotik ve Otomasyon.jpg" alt="Haber Resmi 1" class="card-image">
+            <div class="news-details">
+                <h2>Robotik ve Otomasyon</h2>
+                <p>Robotik ve otomasyon, endüstriyel üretimden sağlık hizmetlerine kadar birçok alanda insan iş gücünü
+                    destekleyerek verimliliği artırıyor.</p>
+            </div>
+        </div>
+
+        <button id="load-more-btn">Daha Fazla Haber Göster</button>
+    </div>
+
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="container2">
+        <div class="footer-info">
+            <h2>Adres:</h2>
+            <p>Tekno Ticaret Merkezi – 5. Kat<br>Yakut Mah. Atatürk Cd. No:14<br>12345 – Etimesgut/Ankara</p>
+            <p>Email: info@teknoertug.com</p>
+            <p>Telefon: (0312) 123 45 67</p>
+        </div>
+        <div class="footer-categories">
+            <h2>Kategoriler</h2>
+            <ul>
+                <li><a href="haberler.html">Teknoloji Haberleri</a></li>
+                <li><a href="enCokOkunanlar.html">En Çok Okunanlar</a></li>
+                <li><a href="film.html">Filmler</a></li>
+                <li><a href="dizi.html">Diziler</a></li>
+                <li><a href="oyun.html">Oyunlar</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h2>teknOErtuğ</h2>
+            <ul>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="aydinlatmaMetni.html">Aydınlatma Metni ve Çerez Politikası</a></li>
+                <li><a href="alintiHakkinda.html">Alıntı ve Yeniden Kullanım Hakkında</a></li>
+                <li><a href="kunye.html">Künye</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</html>

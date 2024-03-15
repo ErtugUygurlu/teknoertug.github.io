@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="news1.css">
+    <link rel="stylesheet" href="iletisim.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">teknOErtuğ</div>
+        <div class="nav-links">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="haberler.html">Haberler</a>
+            <a href="enCokOkunanlar.html">En Çok Okunanlar</a>
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="iletisim.html">İletişim</a>
+            <div class="dropdown">
+                <a href="#">Eğlence</a>
+                <div class="dropdown-content">
+                    <a href="oyun.html">Oyun</a>
+                    <a href="dizi.html">Dizi</a>
+                    <a href="film.html">Film</a>
+                </div>
+            </div>
+        </div>
+        <div class="burger-menu">&#9776;</div>
+    </div>
+
+
+    <div class="container">
+        <h2 style="color: #d43302;">TeknOErtuğ İletişim</h2>
+        <br><br>
+        <p>TeknOErtuğ olarak, okuyucularımızın görüşlerini, önerilerini ve sorularını önemsiyoruz. Her türlü geri
+            bildirimi memnuniyetle karşılıyor ve platformumuzu sürekli olarak geliştirmek için okuyucularımızla
+            etkileşimde bulunmayı amaçlıyoruz.</p>
+        <br><br>
+        <div class="contact-info">
+            <h3>İletişim Bilgileri</h3>
+            <ul>
+                <li><strong>E-posta:</strong> info@teknoertug.com</li>
+                <li><strong>Telefon:</strong> +90 (312) 123 45 67</li>
+                <li><strong>Adres:</strong> Tekno Ticaret Merkezi – 5. Kat<br>Yakut Mah. Atatürk Cd. No:14
+                    12345<br>Etimesgut
+                    Ankara</li>
+            </ul>
+        </div>
+
+        <div class="social-media">
+            <h3>Sosyal Medya</h3>
+            <ul>
+                <li><strong>Twitter:</strong> <a href="https://twitter.com/teknOErtug">@teknOErtug</a></li>
+                <li><strong>Facebook:</strong> <a href="https://www.facebook.com/teknOErtug">TeknOErtuğ</a></li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/teknOErtug">@teknOErtug</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/teknOErtug">TeknOErtuğ</a></li>
+            </ul>
+        </div>
+
+        <div class="contact-form">
+            <h3 style="color: #d43302;">İletişim Formu</h3>
+            <br>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Adınız" required>
+                <input type="email" name="email" placeholder="E-posta Adresiniz" required>
+                <textarea name="message" placeholder="Mesajınız" required></textarea>
+                <br>
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+        <br>
+        <p class="feedback">TeknOErtuğ olarak, sizden gelen her türlü geri bildirimi takdir ediyor ve platformumuzu daha
+            da iyiye götürmek için çaba gösteriyoruz. İletişim kurmaktan çekinmeyin ve bize herhangi bir konuda
+            yazmaktan çekinmeyin.</p>
+    </div>
+
+
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
