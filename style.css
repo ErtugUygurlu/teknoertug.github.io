@@ -477,6 +477,7 @@ button:hover {
     transform: scale(1.05);
 }
 
+
 .card img,
 .card2 .card-image {
     transition: transform 0.3s ease-in-out;
@@ -492,17 +493,19 @@ button:hover {
     color: #FFD700;
 }
 
+
 .scroll-to-top:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
+
 
 .footer-categories ul li a:hover,
 .footer-links ul li a:hover {
     color: #ffffff;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .card-section {
         display: flex;
         flex-direction: column;
@@ -510,11 +513,13 @@ button:hover {
     }
 
     .card2 {
-        width: 90%;
-        margin-bottom: 20px;
+        width: 80%;
+        margin-bottom: 10px;
         position: relative;
         display: flex;
         flex-direction: column;
+        margin-left: -20px;
+
     }
 
     .card2 .card-image {
@@ -530,6 +535,7 @@ button:hover {
         bottom: 0px;
         left: 30px;
         width: 100%;
+        
     }
 
     .news-details h2, .news-details p {
@@ -539,6 +545,9 @@ button:hover {
         white-space: normal;
         margin-top: -20px;
         margin-right: 30px;
+    }
+    .news-details p{
+        background-color: #333;
     }
 }
 
